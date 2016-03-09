@@ -1,0 +1,30 @@
+1. Shell and Bash are the same thing as "Terminal" which is like... talking to your computer directly.
+
+pwd: This is how you learn where you are in the terminal. What folder and what not.
+ls: this lists stuff inside wherever you are
+mv: this can rename a file or actually move it.
+cd: go to/leave folder
+touch: create new file
+mkdir: make a new directory
+rm: remove a file
+help: get some help
+find: can be used to locate certain files in folders
+grep: locate specific lines in files.
+
+2. Version control is how developers can look back on the changes made to their work. It's a system that records changes.
+
+A commit is a snapshot of a change. Best practices for commit messages are to write concise and specific information detailing change made.
+
+A branch is a pointer to a commit. A place to work within.
+
+First you create the file within the branch you're in. Then you add it to be staged and ready for being committed. Then you actually commit the change with a message.
+
+3. Git is for your computer. Github is this online sharing site. Like Google documents but a lot more complicated.
+
+To create a repository, you type in the command line `git branch` followed by the name you would like. To clone you must find the URL of the repository you want to copy and paste that into command line after typing `git clone`. Finally, to update you commit your changes.
+
+To fork a repository is basically the same process as cloning except you're attaching yourself to that parent repository.
+
+A pull request is when you want to merge a branch's info with another. You can create it by requesting a pull request on Github. I have no idea how to merge one, except that you must have "write access" to accept the request.
+
+I would believe the requests are preferred because sometimes a change might not be good or take something down a path the originator may not want. It's also just a great way to keep track of everything and who shared what.
