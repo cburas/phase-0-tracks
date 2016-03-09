@@ -12,3 +12,4 @@
 * What is a merge conflict?
 	This is when two contributors make changes to the same line of code in the same file and then try to
 	commit at the same time. Git becomes confused and doesn't know which commit to accept.
+
