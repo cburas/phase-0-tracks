@@ -1,0 +1,15 @@
+#hat {
+	position: relative;
+	top: 100px;
+	right: 15px;
+}
+
+#glasses {
+	position: relative;
+	bottom: 193px;
+	left: 40px;
+}
+
+#octopus {
+	position: static;
+}
