@@ -1,3 +1,7 @@
+body {
+  width: 960px;
+}
+
 blockquote {
   border-left: 5px solid blue;
   padding: 15px;
@@ -13,6 +17,18 @@ cite {
   list-style-type: none;
   padding-left: 0px;
 }
+
+#external-links {
+  display: inline-block;
+  vertical-align: top;
+}
+
+main {
+  position: relative;
+  display: block;
+  width: 756px;
+}
+
 
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
