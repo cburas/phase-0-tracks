@@ -1,0 +1,31 @@
+Scenario:
+Robot needs to use elevator. Place has 8 floors. Doesn't know how to use elevator.
+
+Rules:
+- write only one statement (action) per line
+- capitalize initial keyword
+-indent to show hierarchy
+-indent statements that fall inside the loop, but not the keywords from the loop
+- end multiline strucures 'ENDIF'
+
+
+-Enter elevator
+-Turn around to face buttons
+-Press numbered button matching the number floor you are going to:
+	-1st floor- Lobby
+	-2nd floor- IT
+	-3rd floor- Accounting
+	-4th floor- Sales
+	-5th floor- Human Resources
+	-6th floor- senior staff offices
+
+	-ELSIF - if you do not know the floor you need step out of the elevator and find out
+
+-Remain calm as elevator takes you to the floor number you designated
+	-IF elevator breaks down with you inside, press the emergency button
+	-answer any questions asked of you by the person talking to you through the speaker
+-WHEN doors open
+	-IF correct floor, leave elevator
+	-ELSE remain inside elevator
+	
+-If doors 
