@@ -24,8 +24,28 @@ Rules:
 -Remain calm as elevator takes you to the floor number you designated
 	-IF elevator breaks down with you inside, press the emergency button
 	-answer any questions asked of you by the person talking to you through the speaker
--WHEN doors open
-	-IF correct floor, leave elevator
-	-ELSE remain inside elevator
-	
--If doors 
+	-WHEN doors open
+		-IF correct floor, leave elevator
+		-ELSE remain inside elevator
+		
+	-IF doors do not open remain calm
+		-press the emergency button
+		-follow instructions given by person through speaker
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+OPENING A JAR
+
+-Inspect jar to make sure the lid is not ajar
+	-IF lid is ajar, twist lid counter-clockwise until lid is off the jar
+	-IF lid is not ajar, proceed to hold jar with your most comfortable hand.
+		-Proceed to put other hand on top of lid and hold tightly.
+		-Turn the lid
+			-IF the lid has been turned to the point you hear a popping sound, twist off lid.
+			-IF the lid will not budge, put the jar down
+				-Retrieve something rubber you can press against the side of the lid in your least comfortable hand
+				-Hold lid tightly with hand mentioned before with rubber object inbetween your hand and the side of the lid. 
+				-pick up jar with comfortable hand again
+				-With all your strength turn the lid counter-clockwise, pushing the rubber object against the side of the lid during the process.
+				-You should hear a popping sound, meaning you can set the rubber object down and twist the lid off with just your hand.
+				-IF you did NOT hear a pop and the lid has not budged, you're screwed.

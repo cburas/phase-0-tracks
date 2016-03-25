@@ -1,9 +1,10 @@
 body {
-  width: 960px;
+  max-width: 960px;
+  text-align: center;
 }
 
 main {
-  width: 756px;
+  width: 70%;
   display: inline-block;
 }
 
@@ -21,11 +22,10 @@ cite {
 #external-links ul {
   list-style-type: none;
   padding-left: 0px;
-  width: 200px;
 }
 
 #external-links {
-  width: 200px;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
 }
@@ -45,4 +45,15 @@ figure {
 figcaption {
   font-style: italic;
   text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 80%;
+  }
+}
+
+@media screen and  (max-width: 700px) {
+  body {font-weight: bold;
+  }
 }
