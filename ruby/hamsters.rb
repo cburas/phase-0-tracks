@@ -1,8 +1,6 @@
 puts "Hamster's name:"
 name = gets.chomp
 
-prompt = ">"
-
 puts "Volume level:"
 volume = Integer(gets.chomp)
 
@@ -10,7 +8,6 @@ if volume <= 10 && volume >= 1
  volume = true
 else 
   volume = false
-  break
 end
 
 puts "Fur color:"
@@ -21,3 +18,7 @@ good_candidate = gets.chomp
 
 puts "Estimated age?"
 est_age = gets.chomp
+
+if est_age.empty?
+	est_age = nil
+end
