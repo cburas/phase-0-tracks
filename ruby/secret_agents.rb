@@ -13,8 +13,6 @@
 
 
 
-
-
 ## OUR METHOD DECLARATIONS
 
 def encrypt (password)
