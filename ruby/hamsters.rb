@@ -1,24 +1,47 @@
+# Get hamster name
 puts "Hamster's name:"
 name = gets.chomp
 
+# Get hamster volume
+# Convert string to integer
+# If volume is between 1 and 10, print valid
+# Else, print invalid
 puts "Volume level:"
 volume = Integer(gets.chomp)
 
-if volume <= 10 && volume >= 1
- volume = true
-else 
-  volume = false
+if volume.between?(1,10)
+  puts "Valid volume"
+else
+  puts "Invalid volume"
+
 end
 
+# Get fur color
 puts "Fur color:"
-fur_color = gets.chomp
+color = gets.chomp
 
-puts "Good candidate for adoption? (y/n)"
-good_candidate = gets.chomp
+# Get adoption candidacy
+puts "Good candidate for adoption: (y/n)"
+good = gets.chomp
 
-puts "Estimated age?"
-est_age = gets.chomp
+if good == "y"
+  puts "Awesome!"
+elsif good == "n"
+  puts "Bummer"
+else 
+  puts "I don't understand"
 
-if est_age.empty?
-	est_age = nil
 end
+
+# Get estimated age
+# Convert age to integer
+# If age left blank, assign nil
+puts "Estimated age:"
+age = gets.chomp
+age = age.to_i
+
+age = nil if age == ""
+
+puts "We have received #{name}, with a volume level of #{volume}, 
+a fur color of #{color}, age #{age}. Good adoption candidate? #{good}"
+Status API Training Shop Blog About
