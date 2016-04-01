@@ -25,38 +25,37 @@ decor_theme = gets.chomp
 puts "The client is willing to remodel? (true/false)"
 will_remodel = gets.chomp
 
-	puts "Any updates? (yes/none)"
-	update = gets.chomp
-		if update == "none"
-			p Client
-			break
-		end
+  puts "Any updates? (yes/none)"
+  update = gets.chomp
+    if update == "none"
+      p Client
+    else
+    	puts "What is the section?"
+			section = gets.chomp
+			section.to_sym
 
-puts "What is the section?"
-section = gets.chomp
-section.to_sym
+			puts "Type in the update."
+			update = gets.chomp
 
-puts "Type in the update."
-update = gets.chomp
+			  if section == :price_range
+			    update.to_i
+			  end
 
-	if section == :price_range
-		update.to_i
-	end
-
-	if update == "yes"
-		:will_remodel = true
-	elsif update == "no"
-		:will_remodel = false
-	else
-	end
+			  if update == "yes"
+			    :will_remodel == true
+			  elsif update == "no"
+			    :will_remodel == false
+			  else
+			  end
+			 end
+			 
 
 
 Client = { 
-	name: name,
-	price_range: price_range,
-	decor_theme: decor_theme,
-	will_remodel: will_remodel,
+  name: name,
+  price_range: price_range,
+  decor_theme: decor_theme,
+  will_remodel: will_remodel,
 }
 
-print Client
-
+p Client
