@@ -25,19 +25,31 @@ decor_theme = gets.chomp
 puts "The client is willing to remodel? (true/false)"
 will_remodel = gets.chomp
 
-loop do
 	puts "Any updates? (yes/none)"
 	update = gets.chomp
 		if update == "none"
+			p Client
 			break
-		else
-			puts "What is your update?"
-			
+		end
 
+puts "What is the section?"
+section = gets.chomp
+section.to_sym
 
-puts "Which key?"
+puts "Type in the update."
+update = gets.chomp
 
-key.to_sym
+	if section == :price_range
+		update.to_i
+	end
+
+	if update == "yes"
+		:will_remodel = true
+	elsif update == "no"
+		:will_remodel = false
+	else
+	end
+
 
 Client = { 
 	name: name,
