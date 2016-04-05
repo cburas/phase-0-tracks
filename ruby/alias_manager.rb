@@ -24,22 +24,33 @@ real_name = gets.chomp.downcase
 
 p real_name
 
-real_name.split.reverse
+real_array = real_name.chars
 
-p real_name
+p real_array
 
-real_name.chars.map! { |letter| 
-	if letter == vowels
+real_array.reverse!
+
+p real_array
+
+
+
+fake_array = real_array.map! { |letter| 
+	if letter == (vowels[0] || vowels[1] || vowels[2] || vowels[3] || vowels[4])
 		vowels.next
 	elsif letter == 'z'
 		letter == 'b'
+	elsif letter == ' '
+		letter == '/'
 	else
 		letter.next
 	end
+}
 
-p real_name
+p fake_array
 
+fake_name = fake_array.join
 
+p fake_name
 
 
 
