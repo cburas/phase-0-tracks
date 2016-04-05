@@ -16,3 +16,30 @@
 # make exception for 'z' to become 'b'
 # gathering all names/data
 # puts " 'fake name' is actually 'real name' "
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+
+puts "What is spy's real name?"
+real_name = gets.chomp.downcase
+
+p real_name
+
+real_name.split.reverse
+
+p real_name
+
+real_name.chars.map! { |letter| 
+	if letter == vowels
+		vowels.next
+	elsif letter == 'z'
+		letter == 'b'
+	else
+		letter.next
+	end
+
+p real_name
+
+
+
+
+
