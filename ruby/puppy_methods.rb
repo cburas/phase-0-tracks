@@ -7,3 +7,9 @@ class Puppy
 
 end
 
+smitty = Puppy.new
+
+smitty.fetch("ball")
+
+
+
