@@ -1,4 +1,9 @@
-# class Puppy
+class Puppy
+end
+
+Spike = Puppy.new
+Toby = Puppy.new
+Tulip = Puppy.new
 
 #attributes:
 	# fur? varies
