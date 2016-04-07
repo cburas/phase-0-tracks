@@ -2,14 +2,15 @@
 
 class Santa
 
-	attr_reader :gender :ethnicity
-	attr_accessor :reindeer_ranking
+	attr_reader :gender, :ethnicity
+	attr_accessor :reindeer_ranking, :age
 
 	def initialize(gender, ethnicity) 
 		@gender  
 		@ethnicity  
 		@age = 0  
-		@reindeer_ranking =["Rudolph","Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]  end
+		@reindeer_ranking =["Rudolph","Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]  
+	end
 
 	def speak 
 		print "Ho, Ho, ho! Haaaaappy holidays!" 
@@ -17,10 +18,6 @@ class Santa
 
 	def eat_milk_and_cookies(cookie) 
 		print "That was a good #{cookie}!" 
-	end
-
-	def celebrate_birthday
-		@age + 1
 	end
 
 end
@@ -36,7 +33,15 @@ example_genders.length.times do |i|
 end
 
 
+# 20.times do |i|
+# Santa.new(example_genders.sample , example_ethnicities.sample)
+# "Santa #{i}"
+# end
 
-
+i = 0
+while i <= 20
+	Santa.new(example_gender.sample, example_ethnicity.sample)
+	i += 1
+end
 
 
