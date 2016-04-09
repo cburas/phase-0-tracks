@@ -44,7 +44,7 @@ remove_item(new_list, "apples")
 def update_quantity(list, item, quantity)
 # find item name and update its quantity 
   if new_list.include?(item)
-    new_list[item] += quantity
+    new_list[item] = quantity
 # print the new list    
     p new_list
   else
@@ -54,9 +54,25 @@ end
 
 # Method to print a list and make it look pretty
 def create_pretty_list(list)
-  
+
 end
 # input: make list pretty
 # steps: write out a more user-friendly list
 # output: print the lovely visual
+
+test_list = create_list("apples oranges bananas")
+
+add_item(test_list, "lemonade", 2)
+add_item(test_list, "tomatoes", 3)
+add_item(test_list, "onions", 1)
+add_item(test_list, "ice cream", 4)
+
+remove_item(test_list, "lemonade")
+
+update_quantity(test_list, "ice cream", 1)
+
+p create_pretty_list(test_list)
+
+# I learned you don't want to have programming terms in your pseudocode. Using hashes makes the list not look so great. The method returns the last line of code unless stated otherwise. You can pass string, integers, and blocks as arguments through your methods. How to use methods to work with outside information is definitely something I understand better. I kinda wish I had learned this sooner because I could have the office hours I had not discussing this and instead focusing on loops.
+
 
