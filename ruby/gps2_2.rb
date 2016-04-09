@@ -37,16 +37,10 @@ add_item(new_list, "apples", 5)
 
 # Method to remove an item from the list
 def remove_item(new_list, item)
-  new_list.delete_if(item)
-    # new_list[item] -= quantity
-  # else
-  #   new_list[item] = quantity
-  
-   p new_list  
-  
-remove_item(new_list, "apples")
-  
+  new_list.delete(item)
+  p new_list  
 end
+remove_item(new_list, "apples")
 # input: item name and quantity, list
 # steps: remove an item and its quantity from the hash
 # output: print and return the new list 
@@ -64,3 +58,4 @@ end
 # input: make list pretty
 # steps: write out a more user-friendly list
 # output: print the lovely visual
+
