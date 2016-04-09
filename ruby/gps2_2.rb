@@ -1,7 +1,4 @@
-# Method to create a list
-# input: string of items separated by spaces (example: "carrots apples cereal pizza")
-# steps: 
-  # Define a method that takes a string argument
+# create a list, with string of items separated by spaces as argument
 def create_list(item)
   list = {}
   # Separate individual strings
@@ -19,10 +16,9 @@ new_list = create_list("carrots apples cereal pizza")
  
 
 
-# Method to add an item to a list
-# input: item name and optional quantity, list
+# Method to add an item to a list, input item, list, quantity
 def add_item(new_list, item, quantity)
-  # steps: Insert any new items and their quantites into the hash
+ # Insert any new items and their quantites into the hash
   if new_list.include?(item)
     new_list[item] += quantity
   else
@@ -35,25 +31,30 @@ end
 add_item(new_list, "apples", 5)
 
 
-# Method to remove an item from the list
+# Method to remove an item from the list, input item and list
 def remove_item(new_list, item)
+# steps: remove an item and its quantity from the hash
   new_list.delete(item)
+# output: print and return the new list   
   p new_list  
 end
 remove_item(new_list, "apples")
-# input: item name and quantity, list
-# steps: remove an item and its quantity from the hash
-# output: print and return the new list 
 
-# Method to update the quantity of an item
+# Method to update the quantity of an item, input item, list, quantity
 def update_quantity(list, item, quantity)
+# find item name and update its quantity 
+  if new_list.include?(item)
+    new_list[item] += quantity
+# print the new list    
+    p new_list
+  else
+     puts "Item not on list."
+  end
 end
-# input: item name and quantity, list
-# steps: find item name and update its quantity
-# output: print and return the new list
 
 # Method to print a list and make it look pretty
 def create_pretty_list(list)
+  
 end
 # input: make list pretty
 # steps: write out a more user-friendly list
