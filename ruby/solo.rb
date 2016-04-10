@@ -36,31 +36,34 @@ class DisneyPrincess
 
 end
 
+# Asking how many princesses the user wants to create
 puts "How many Disney princesses would you like to create?"
 inst = gets.chomp.to_i
 
 inst.times do 
 
-	# Asking for Disney princess info
+# Asking for Disney princess info
 	puts "What's the name of your Disney princess?"
 	name = gets.chomp
 
 	puts "How old is #{name}?"
 	age = gets.chomp
 
+# Actually create the princess
 	d_p1 = DisneyPrincess.new(name, age)
 
+# Ask about kingdom's name
 	puts "What kingdom is #{name} from?"
 	kingdom = gets.chomp
 
 	d_p1.kingdom = kingdom
 
 	puts "What is the name of her best animal companion?"
-	animal_friend.gets.chomp
+	animal_friend = gets.chomp
 
 	d_p1.animal_friend = animal_friend
 
-	puts "You have now created Princess #{name} of #{age} years, along with her animal friend #{animal_friend}. She lives in the kingdom of #{kingdom}"
+	puts "You have now created #{kingdom}'s Princess #{name}, #{age} years old, and  along with her animal friend #{animal_friend} is ready for some amazing adventures."
 
 end
 
