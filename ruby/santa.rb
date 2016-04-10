@@ -2,8 +2,7 @@
 
 class Santa
 
-	attr_reader :gender, :ethnicity
-	attr_accessor :reindeer_ranking, :age
+	attr_accessor :reindeer_ranking, :age, :gender, :ethnicity
 
 	def initialize(gender, ethnicity) 
 		@gender  
@@ -32,6 +31,8 @@ example_genders.length.times do |i|
 	santas << Santa.new(example_genders[i], example_ethnicities[i])
 end
 
+print santas
+
 example_ages = (1..140).to_a
 
 
@@ -45,7 +46,7 @@ while i <= 20
 	s = Santa.new(example_ethnicities.sample, example_genders.sample)
 	s.age = example_ages.sample
 	i += 1
-	print s
+	p s
 end
 
 
