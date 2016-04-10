@@ -32,8 +32,7 @@ example_genders.length.times do |i|
 	santas << Santa.new(example_genders[i], example_ethnicities[i])
 end
 
-x = example_genders.sample
-y = example_ethnicities.sample
+example_ages = (1..140).to_a
 
 
 # 20.times do |i|
@@ -43,8 +42,10 @@ y = example_ethnicities.sample
 
 i = 0
 while i <= 20
-	Santa.new(x, y)
+	s = Santa.new(example_ethnicities.sample, example_genders.sample)
+	s.age = example_ages.sample
 	i += 1
+	print s
 end
 
 
