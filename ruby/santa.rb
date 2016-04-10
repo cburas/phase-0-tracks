@@ -19,7 +19,6 @@ class Santa
 	def eat_milk_and_cookies(cookie) 
 		print "That was a good #{cookie}!" 
 	end
-
 end
 
 #Add some diverse initializations to file as driver code. 
@@ -29,11 +28,8 @@ example_genders = ["agender", "female", "male", "transfemale", "transmale", "big
 example_ethnicities = ["white", "black", "Asian", "Indian", "Latino", "prefer not to say", "African", "Middle Eastern"]
 
 example_genders.length.times do |i|
-	santas << Santa.new(example_genders[i], example_ethnicities[i])
+		santas << Santa.new(example_genders[i], example_ethnicities[i])
 end
-
-x = example_genders.sample
-y = example_ethnicities.sample
 
 
 # 20.times do |i|
@@ -43,8 +39,9 @@ y = example_ethnicities.sample
 
 i = 0
 while i <= 20
-	Santa.new(x, y)
+	Santa.new(example_ethnicities.sample, example_genders.sample)
 	i += 1
 end
+
 
 
