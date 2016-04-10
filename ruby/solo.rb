@@ -63,7 +63,7 @@ inst.times do
 
 	d_p1.animal_friend = animal_friend
 
-	puts "You have now created #{kingdom}'s Princess #{name}, #{age} years old, and  along with her animal friend #{animal_friend} is ready for some amazing adventures."
+	puts "\nYou have now created #{kingdom}'s Princess #{name}, #{age} years old, and  along with her animal friend #{animal_friend} is ready for some amazing adventures.\n"
 
 end
 
