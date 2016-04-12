@@ -1,15 +1,39 @@
-module Shout
+# module Shout
 
-	def self.yell_angrily(words)
-		words + "!!!" + " :("
-	end
+# 	def self.yell_angrily(words)
+# 		words + "!!!" + " :("
+# 	end
 
-	# def self.yelling_happily(words)
-	# 	words + "!!!" + " :D"
-	# end
+# 	# def self.yelling_happily(words)
+# 	# 	words + "!!!" + " :D"
+# 	# end
 	
-end
+# end
 
 # Shout.yell_angrily("Shut Up")
 
 # Shout.yelling_happily("Happy Birthday")
+
+module Shout
+
+	def yelling_angrily(words)
+		words + "!!!" + " :("
+	end
+
+end
+
+class Damsel
+	include Shout
+end
+
+class Bear
+	include Shout
+end
+
+princess = Damsel.new
+
+mama = Bear.new
+
+princess.yelling_angrily("Stop")
+
+mama.yelling_angrily("Don't take another step towards my cubs")
