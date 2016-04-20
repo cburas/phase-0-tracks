@@ -1,43 +1,53 @@
 #create method that takes three items as parameters
 #store three items in an array
 #print three items as an array
-def array(key, value, start)
-  lost = [key, value, start]
-  p lost
+Release 2
+
+def add_to_array(array, item)
+  array << item
+  p array
 end
 
-def add_to_array(arr, x)
-  arr = []
-  arr << x
-  p arr
+add_to_array([], true)
+add_to_array([true], "chipmunk")
+
+
+def create_array(x, y, z)
+  new_array = []
+  new_array << x << y << z
+  p new_array
 end
 
-drill = []
+create_array(1, "two", nil)
+create_array("Courtney", "Christel", "awesome")
 
-drill << "sergeant", "fire", "electric", "bit", "air-raid"
-p drill
 
-drill.delete_at(2)
-p drill
 
-drill.insert(2,"master")
-p drill
+Release 1
+our_array = []
 
-drill.delete("sergeant")
-p drill
+our_array << "coffee" << "tea" << "cookies" << "croissants" << "bananas"
 
-include = drill.include?("master")
-if include == true
-  p "The drill array does include your string."
-else
-  p "The drill array does not include your string."
-end
+our_array.delete_at(2)
 
-animals = ["dog", "cat", "cow", "squirrel"]
+our_array.insert(2, "cupcakes")
 
-compound = drill + animals
-p compound
+our_array.delete("coffee")
 
-array("cow", "bird", "hawk")
+puts "It is #{our_array.include?("cupcakes")} that this item is in our array."
 
-add_to_array("wet", "dry")
+p our_array
+
+
+cool_animals = ["nighthawks", "red pandas", "otters"]
+p cool_animals
+
+animal_tea_party = cool_animals + our_array
+p animal_tea_party
+
+
+
+
+
+
+
