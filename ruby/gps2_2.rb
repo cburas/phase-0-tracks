@@ -41,7 +41,7 @@ end
 remove_item(new_list, "apples")
 
 # Method to update the quantity of an item, input item, list, quantity
-def update_quantity(list, item, quantity)
+def update_quantity(new_list, item, quantity)
 # find item name and update its quantity 
   if new_list.include?(item)
     new_list[item] = quantity
@@ -52,13 +52,20 @@ def update_quantity(list, item, quantity)
   end
 end
 
-# Method to print a list and make it look pretty
-def create_pretty_list(list)
+update_quantity(new_list, "carrots", 3)
 
-end
+# Method to print a list and make it look pretty
+def create_pretty_list(new_list)
 # input: make list pretty
+  puts "My Shopping List:"
 # steps: write out a more user-friendly list
-# output: print the lovely visual
+  new_list.each do |food, quantity|
+    puts "#{quantity} #{food}"
+  end
+# output: print the lovely visual    
+end
+
+create_pretty_list(new_list)
 
 test_list = create_list("apples oranges bananas")
 
@@ -71,7 +78,7 @@ remove_item(test_list, "lemonade")
 
 update_quantity(test_list, "ice cream", 1)
 
-p create_pretty_list(test_list)
+create_pretty_list(test_list)
 
 # I learned you don't want to have programming terms in your pseudocode. Using hashes makes the list not look so great. The method returns the last line of code unless stated otherwise. You can pass string, integers, and blocks as arguments through your methods. How to use methods to work with outside information is definitely something I understand better. I kinda wish I had learned this sooner because I could have the office hours I had not discussing this and instead focusing on loops.
 
