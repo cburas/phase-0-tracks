@@ -1,9 +1,9 @@
 class Puppy
 end
 
-Spike = Puppy.new
-Toby = Puppy.new
-Tulip = Puppy.new
+Spot = Puppy.new
+Dolly = Puppy.new
+Toto = Puppy.new
 
 #attributes:
 	# fur? varies
