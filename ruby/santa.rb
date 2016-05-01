@@ -1,6 +1,8 @@
 #Define a Santa class and create 3 instances
 
 class Santa
+	attr_accessor :gender
+	attr_reader :age, :ethnicity
 
 	def initialize(gender, ethnicity)
 		@gender = gender
@@ -24,15 +26,26 @@ class Santa
 		p "That was a good #{cookie}!"
 	end
 
+	def celebrate_birthday
+		#age one year
+		@age + 1
+		p "Happy Birthday Santa! You're #{@age} now!"
+	end
+
+	def get_mad_at(reindeer_name)
+		# pushing reindeer to end of line
+		@reindeer_ranking.push(reindeer_name)
+		# taking out the duplicate
+		@reindeer_ranking.uniq { |deer| deer.last }
+	end
 
 end
 
 
 # Nick = Santa.new
-
 # Nick.speak
-
 # Nick.eat_milk_and_cookies("gingerbread cookie")
+
 
 Whoopi = Santa.new("female", "black")
 
