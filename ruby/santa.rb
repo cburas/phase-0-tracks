@@ -18,8 +18,9 @@ class Santa
 end
 
 
-Nick = Santa.new
+# Nick = Santa.new
 
-Nick.speak
+# Nick.speak
 
-Nick.eat_milk_and_cookies("gingerbread cookie")
+# Nick.eat_milk_and_cookies("gingerbread cookie")
+
