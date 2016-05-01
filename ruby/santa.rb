@@ -16,3 +16,10 @@ class Santa
 
 
 end
+
+
+Nick = Santa.new
+
+Nick.speak
+
+Nick.eat_milk_and_cookies("gingerbread cookie")
