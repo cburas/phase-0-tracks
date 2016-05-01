@@ -1,74 +1,68 @@
 class Puppy
 
-  def initialize
-    print "initializing new puppy instance..."
-  end
+	def initialize
+		p "initializing new puppy instance..."
+	end
+
+	def fetch(toy)
+		puts "I brought the #{toy}!"
+		toy
+	end
   
-  def fetch(toy)
-    puts "I brought back the #{toy}!"
+  def speak(n)
+  	n.times {|n|
+  	puts "Woof!"}
   end
-  
-  def speak(num)
-    num.times do
-      print "Woof! "
-    end
-  end
-  
+
   def roll_over
-    print "*rolls over*"
+  	# don't know why this doesn't automatically create a new line
+  	print "*rolls over*"
   end
-  
-  def dog_years(num)
-    num = num*7
+
+  def dog_years(yr)
+  	p yr * 7 
   end
-  
+
   def sit
-    print "*sit*"
+  	# same issue as roll_over
+  	print "*sits*"
   end
+
 end
+
 
 class Cat
-  
-  def initialize
-    print "initializing new cat"
-  end
-  
-  def chase_string(num)
-    num.times do
-      print "chasing string! "
-    end
-  end
-  
-  def meow
-    print "Meoww!!"
-  end
+
+	def initialize
+		p "A cat has been born!"
+	end
+
+	def lick
+		p "*licks*"
+	end
+
+	def purr
+		p "*purrs"
+	end
+
 end
 
-cat_array = []
-50.times do |i|
-  cat_array.push(Cat.new)
+
+
+# Bubby = Puppy.new
+
+# Bubby.fetch("bone")
+
+# Bubby.speak(2)
+
+# Bubby.roll_over
+
+# Bubby.dog_years(11)
+
+# Bubby.sit
+
+50.times do |kitty|
+	kitty = Cat.new
 end
 
-p cat_array
 
-cat_array.each do |i|
-  i.chase_string(1)
-  i.meow
-end
-
-smitty = Puppy.new
-
-smitty.fetch("ball")
-
-smitty.speak(2)
-
-smitty.roll_over
-
-p smitty.dog_years(1)
-
-smitty.sit
-
-5.times do |i|
-  print i, " "
-end
-#=> 0 1 2 3 4
