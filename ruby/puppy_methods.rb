@@ -41,8 +41,8 @@ class Cat
 		p "*licks*"
 	end
 
-	def purr
-		p "*purrs"
+	def purrs
+		p "*purrs*"
 	end
 
 end
@@ -61,8 +61,15 @@ end
 
 # Bubby.sit
 
+many_cats = []
+
 50.times do |kitty|
-	kitty = Cat.new
+	many_cats << kitty = Cat.new
 end
+
+many_cats.each do |kit|
+	kit.purrs
+end
+
 
 
