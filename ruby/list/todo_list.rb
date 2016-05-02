@@ -1,18 +1,26 @@
 class TodoList
 
-	def initialize(items)
-		items.to_a
+	def initialize(x)
+		@list_array = x
 	end
 
-	def get_items(items)
-		items.to_a
+# need to ask at study session 
+	def get_items
+		@list_array
 	end
 
-	def add_item
+	def add_item(item)
+		@list_array << item
 	end
-	
+
+	def delete_item(item)
+		@list_array.delete(item)
+	end
+
+	def get_item(index)
+		@list_array.fetch(index)
+	end
+
 end
 
-# list = TodoList.new(["do the dishes", "mow the lawn"])
 
-# p list
