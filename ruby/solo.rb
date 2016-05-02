@@ -20,7 +20,7 @@ class DisneyPrincess
 		if song.chr == (a..l)
 			puts "laaaaaaa"
 		else
-			puts "do ray me fa so la tee do!"
+			puts "doh ray me fa so la tee doh!"
 		end
 	end
 
