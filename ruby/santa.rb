@@ -60,7 +60,7 @@ end
 10.times { p Santa.new(example_genders.sample, example_ethnicities.sample) 
 }
 
-# couldn't figure out how to use .rand(140). How can I call it on something that doesn't have a name? And when I do give the whole thing a name, the program thinks it's only equal to the integer...!
+# couldn't figure out how to use .rand(140). How can I call it on something that doesn't have a name? And when I do give the whole thing a name, the program thinks it's only equal to the integer...! Plus, you want @age as a 'getter' method- meaning it can't be changed outside the class.
 
 
 
