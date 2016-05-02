@@ -33,10 +33,12 @@ class Santa
 	end
 
 	def get_mad_at(reindeer_name)
-		# pushing reindeer to end of line
+		# deleting original position
+		@reindeer_ranking.delete(reindeer_name)
+		p @reindeer_ranking
+		# adding/pushing reindeer to end of line
 		@reindeer_ranking.push(reindeer_name)
-		# taking out the duplicate
-		@reindeer_ranking.uniq { |deer| deer.last }
+		p @reindeer_ranking
 	end
 
 end
@@ -47,10 +49,12 @@ end
 # Nick.eat_milk_and_cookies("gingerbread cookie")
 
 
-Whoopi = Santa.new("female", "black")
-
-Grover = Santa.new("agender", "Mystical Creature")
-
+# Whoopi = Santa.new("female", "black")
+# Grover = Santa.new("agender", "Mystical Creature")
 Joey = Santa.new("male", "white")
 
+Joey.get_mad_at("Vixen")
+
+
+# 50.times { |claus| claus = Santa.new }
 
