@@ -16,8 +16,8 @@
 
 module Shout
 
-	def yelling_angrily(words)
-		words + "!!!" + " :("
+	def yelling_angrily(phrase)
+		phrase + "!!!" + " :("
 	end
 
 end
