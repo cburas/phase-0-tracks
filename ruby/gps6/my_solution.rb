@@ -16,7 +16,12 @@ class VirusPredictor
     @population = population
     @population_density = population_density
   end
-  
+
+def virus_effects
+    predicted_deaths
+    speed_of_spread
+end  
+
 #Determining the number of deaths based on state data information
   def predicted_deaths
     # predicted deaths is solely based on population density
@@ -76,7 +81,7 @@ end
 STATE_DATA.each do  |state, population_density|
   
    states = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
-   states.predicted_deaths
+   states.virus_effects
 end
 
   
@@ -92,3 +97,13 @@ end
 
 #=======================================================================
 # Reflection Section
+
+# 1. The outer hash used the rocket syntax whereas the inner hash used the symbol.
+
+# 2. Require_relative has to be in the same directory as the file whereas with require it doesn't have to be in the same directory
+
+# 3. .each, .each_pair, .each_value, 
+
+# 4. They didn't need the instance variables as arguments because they already has access to them, being inside the class.
+
+# 5. That it's always simpler than you think.
