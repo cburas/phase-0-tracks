@@ -9,7 +9,9 @@ names.push("Black Beauty");
 
 function toObject(names, colors) {
 	var result = {};
-	for (var i = 0; i <= names.length; i++)
+	for (var i = 0; i < names.length; i++)
 			result[names[i]] = colors[i];
 		return result
 } 
+
+console.log(toObject(names, colors));
