@@ -3,4 +3,7 @@
 
 var word = "javascript"
 
+// I know I'm going to need it to print on the screen so I'm going to need, console and 'return'
+
+console.log();
 
