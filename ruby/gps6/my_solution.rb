@@ -10,6 +10,7 @@ require_relative 'state_data'
 
 class VirusPredictor
 
+#Initialize is responsible for collecting the data from the state data to provide information for the rest of the methods.
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
@@ -20,8 +21,6 @@ class VirusPredictor
     predicted_deaths
     speed_of_spread
   end
-
-  private
 
   def predicted_deaths
     # predicted deaths is solely based on population density
@@ -70,10 +69,10 @@ end
  # initialize VirusPredictor for each state
 
 
-# alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-# alabama.virus_effects
-
-# jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
+#   alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
+#   alabama.virus_effects
+  
+#  jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
 # jersey.virus_effects
 
 # california = VirusPredictor.new("California", STATE_DATA["California"][:population_density], STATE_DATA["California"][:population])
@@ -82,6 +81,7 @@ end
 # alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 # alaska.virus_effects
 
+
 STATE_DATA.each do |state, population_density|
   
    states = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
@@ -89,11 +89,18 @@ STATE_DATA.each do |state, population_density|
 end
 
 
+
 #=======================================================================
 # Reflection Section
 
+
 # 1. One uses the rocket syntax, the other uses symbols
+
 # 2. Require_relative can only be used if the files are in the same directory. Require can be used in either case.
+
 # 3. .each, .each_value, .each_key
+
 # 4. I noticed the instance variables didn't need to be arguments because the two methods already had access to the instance variables by being in the class.
+
 # 5. Look at each part and it's always simpler than you think.
+
