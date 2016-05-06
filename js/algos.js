@@ -33,4 +33,14 @@ function jsLength(array){
 
 console.log(jsLength(words));
 
-// for the record, this was not fun.
+// for the record, this was not fun. And I'm not done...
+
+// {name: "Steven", age: 54} vs {name: "Tamir", age: 54} has to eq true
+// comparing means using && or || 
+
+function compareObjects(firstPiece, secondPiece){
+
+}
+
+
+
