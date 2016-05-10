@@ -37,6 +37,7 @@ console.log(jsLength(words));
 
 // {name: "Steven", age: 54} vs {name: "Tamir", age: 54} has to eq true
 // comparing means using && or || 
+// I hate javascript
 
 function compareObjectPairs(firstPair, secondPair){
 	
