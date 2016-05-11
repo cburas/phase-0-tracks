@@ -36,10 +36,20 @@ console.log(jsLength(words));
 // for the record, this was not fun. And I'm not done...
 
 // {name: "Steven", age: 54} vs {name: "Tamir", age: 54} has to eq true
-// comparing means using && or || 
+// comparing means using && or || (BOOLEAN)
 // I hate javascript
 
-function compareObjectPairs(firstPair, secondPair){
+// After initial submit:
+// I've started googling again and I'm seeing FOR loops with 'in' as a special word
+// how the hell was I supposed to know that was syntax...
+// *deep breath* anyway, looks like a possible solution to my function
+// since the two example hashes look like they would b in the same array,
+// I'm going to change my 2 arguments to 1 array argument.
+
+function compareObjectPairs(array) {
+	for (var i=0; i < array.length; i++) {
+		if 
+	}
 	
 }
 
