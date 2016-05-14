@@ -1,0 +1,5 @@
+1. Display the information in one table
+2. Update an item that meets some condition (tinkerbell was princess, now not)
+3. Display info in both tables with one query
+4. Display select few columns from both tables with one query.
+5. Delete item that meets some condition (tinkerbell, complicated)
