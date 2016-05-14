@@ -15,7 +15,7 @@
 11|Tinkerbell|Peter Pan|1953|true|3|3|Act of Heroism|true
 
 
-2. Update an item that meets some condition (tinkerbell was princess, now not)
+2. Update an item that meets some condition (Tinkerbell was princess, now not)
 
 	sqlite> SELECT * FROM disney_princesses;
 1|Snow White|Snow White and the Seven Dwarfs|1938|true|1
