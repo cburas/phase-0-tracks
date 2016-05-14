@@ -17,12 +17,11 @@ class VirusPredictor
     @population_density = population_density
   end
 
-def virus_effects
+  def virus_effects
     predicted_deaths
     speed_of_spread
-end  
+  end
 
-#Determining the number of deaths based on state data information
   def predicted_deaths
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -41,7 +40,6 @@ end
 
   end
 
-#determining the speed of spread based on the state's population density  
   def speed_of_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
@@ -72,18 +70,7 @@ end
 
 
 #   alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
-
 #   alabama.virus_effects
-
- # STATE_DATA.each do |state|
- #   state
-
-STATE_DATA.each do  |state, population_density|
-  
-   states = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
-   states.virus_effects
-end
-
   
 #  jersey = VirusPredictor.new("New Jersey", STATE_DATA["New Jersey"][:population_density], STATE_DATA["New Jersey"][:population])
 # jersey.virus_effects
@@ -95,15 +82,25 @@ end
 # alaska.virus_effects
 
 
+STATE_DATA.each do |state, population_density|
+  
+   states = VirusPredictor.new(state, STATE_DATA[state][:population_density], STATE_DATA[state][:population])
+   states.virus_effects
+end
+
+
+
 #=======================================================================
 # Reflection Section
 
-# 1. The outer hash used the rocket syntax whereas the inner hash used the symbol.
 
-# 2. Require_relative has to be in the same directory as the file whereas with require it doesn't have to be in the same directory
+# 1. One uses the rocket syntax, the other uses symbols
 
-# 3. .each, .each_pair, .each_value, 
+# 2. Require_relative can only be used if the files are in the same directory. Require can be used in either case.
 
-# 4. They didn't need the instance variables as arguments because they already has access to them, being inside the class.
+# 3. .each, .each_value, .each_key
 
-# 5. That it's always simpler than you think.
+# 4. I noticed the instance variables didn't need to be arguments because the two methods already had access to the instance variables by being in the class.
+
+# 5. Look at each part and it's always simpler than you think.
+
