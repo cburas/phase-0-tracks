@@ -1,0 +1,43 @@
+1. Join three tables.
+
+	sqlite> SELECT * FROM users, businesses, reviews
+   ...> WHERE reviews.user_id = users.id
+   ...> AND reviews.business_id = businesses.id;
+1|Bradford|Pitt|3|The Beagle Nightclub|1|5|Great food!|3|1
+3|Angela|Jolie|2|Amir's Towing|2|3|Very late.|2|3
+2|Mandy|Kaling|2|Amir's Towing|3|2|Super late and rude!|2|2
+1|Bradford|Pitt|2|Amir's Towing|4|4|long wait.|2|1
+1|Bradford|Pitt|1|Grundy Hollow Wedding Chapel|5|4|The food was ok.|1|1
+
+
+2. Only view user's names, business name, star rating, and comment.
+
+	sqlite> SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+   ...> FROM reviews
+   ...> INNER JOIN users ON users.id = reviews.user_id
+   ...> INNER JOIN businesses ON businesses.id = reviews.business_id;
+Bradford|Pitt|The Beagle Nightclub|5|Great food!
+Angela|Jolie|Amir's Towing|3|Very late.
+Mandy|Kaling|Amir's Towing|2|Super late and rude!
+Bradford|Pitt|Amir's Towing|4|long wait.
+Bradford|Pitt|Grundy Hollow Wedding Chapel|4|The food was ok.
+
+3. View all data from all tables for one business.
+
+sqlite> SELECT * FROM users, businesses, reviews
+   ...> WHERE businesses.id = 2;
+1|Bradford|Pitt|2|Amir's Towing|1|5|Great food!|3|1
+1|Bradford|Pitt|2|Amir's Towing|2|3|Very late.|2|3
+1|Bradford|Pitt|2|Amir's Towing|3|2|Super late and rude!|2|2
+1|Bradford|Pitt|2|Amir's Towing|4|4|long wait.|2|1
+1|Bradford|Pitt|2|Amir's Towing|5|4|The food was ok.|1|1
+2|Mandy|Kaling|2|Amir's Towing|1|5|Great food!|3|1
+2|Mandy|Kaling|2|Amir's Towing|2|3|Very late.|2|3
+2|Mandy|Kaling|2|Amir's Towing|3|2|Super late and rude!|2|2
+2|Mandy|Kaling|2|Amir's Towing|4|4|long wait.|2|1
+2|Mandy|Kaling|2|Amir's Towing|5|4|The food was ok.|1|1
+3|Angela|Jolie|2|Amir's Towing|1|5|Great food!|3|1
+3|Angela|Jolie|2|Amir's Towing|2|3|Very late.|2|3
+3|Angela|Jolie|2|Amir's Towing|3|2|Super late and rude!|2|2
+3|Angela|Jolie|2|Amir's Towing|4|4|long wait.|2|1
+3|Angela|Jolie|2|Amir's Towing|5|4|The food was ok.|1|1
