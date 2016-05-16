@@ -31,4 +31,18 @@ SQL
 
 pp_db.execute(create_table_practice)
 
-insert_info = "INSERT_INTO sites(name, url, free) VALUES(?, ?, ?)"
+insert_codecademy = <<-SQL
+IF NOT EXISTS(INSERT INTO sites(name, url, free)
+VALUES ("codecademy", "codecademy.com/learn", "true")
+)
+SQL
+
+insert_practice_sql = <<-SQL3
+IF NOT EXISTS(INSERT INTO practice(date, site_id, language, lesson, num_of_exercises_completed)
+VALUES (5-12-2016, 1, SQL, 1, 10) 
+)
+SQL3
+
+
+
+ 
