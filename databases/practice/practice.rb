@@ -30,3 +30,5 @@ create_table_practice = <<-SQL
 SQL
 
 pp_db.execute(create_table_practice)
+
+insert_info = "INSERT_INTO sites(name, url, free) VALUES(?, ?, ?)"
