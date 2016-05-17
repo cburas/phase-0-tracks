@@ -5,9 +5,17 @@
 </head>
 <body>
 
-<p> This is a paragraph because I need something in here to alter</p>
+<p id="alter"> This is a paragraph because I need something in here to alter.</p>
 
+<script>
+var para = document.createElement("p");
+var newNode = document.createTextNode("Alright, Javascript isn't SO bad...");
+para.appendChild(newNode);
 
+var element = document.getElementById("alter");
+
+element.appendChild(para);
+</script>
 
 </body>
 </html>
