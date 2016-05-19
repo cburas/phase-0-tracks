@@ -14,7 +14,7 @@ $(function() {
 });
 
 $(function() {
-	$(["name=show"]).click(function() {
+	$("[name=show]").click(function() {
 		$("#hide").show();
 	});
 });
