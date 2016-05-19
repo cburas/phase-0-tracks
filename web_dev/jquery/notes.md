@@ -5,3 +5,7 @@ JQuery - just read through this apparent library. Get an idea of what I've got a
 
 4:25 AND GO!
 
+9:24 AM the next day...
+
+So Google is the all knowing, powerful one.
+W3Schools had a 'tutorial' explaining Jquery it turned out so I read through that. I followed that with going to the Jquery learning center on their website. I think starting out with W3Schools was the right decision. I first started reading the site itself but I felt like there was still to much information. I needed something at first to give me bones and W3Schools did that.
