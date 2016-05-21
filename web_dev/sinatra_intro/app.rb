@@ -49,3 +49,14 @@ get '/contact' do
 	"2812 Greenport Ave.<br>Temple, ID 703542<br>"
 end
 
+get '/great_job' do
+	name = params[:name]
+	if name
+		"Good job, #{name}!"
+	else
+		"Good job!"
+	end
+end
+
+
+
